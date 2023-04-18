@@ -1,0 +1,31 @@
+body {
+    padding: 20px 0;
+  }
+  .box {
+    width: 150px;
+    height: 150px;
+    background: slateblue;
+    padding: 8px;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+
+/* Place keyframes after styling*/
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  /* ...and then apply it: */
+  .box {
+    animation: slide-in 1000ms;
+  }
